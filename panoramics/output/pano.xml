@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node1">
+  <panorama id="node1">
+    <input height="1759" leveltilesize="510" levelbias="0.400" levelbiashidpi="0.400" leveltileurl="tiles/PanoramaDay/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelingpitch="0" width="1759" levelingroll="0">
+      <level height="1759" preload="0" predecode="0" width="1759"/>
+      <level height="879" preload="0" predecode="0" width="879"/>
+      <level height="439" preload="1" predecode="1" width="439"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="59.5" pan="114.39"/>
+      <min tilt="-29.742" fov="5" pan="-180"/>
+      <max tilt="29.742" fov="120" pan="180"/>
+    </view>
+    <userdata author="" info="" title="Panoramic Day" source="" description="Panoramic Day" comment="" latitude="" longitude="" tags="Panoramics|Panoramic Day" datetime="" copyright=""/>
+    <hotspots height="20" wordwrap="1" width="180">
+      <label border="1" height="20" backgroundalpha="1" enabled="1" wordwrap="1" borderradius="1" textcolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" background="1" width="180" bordercolor="0x000000" textalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomout="0" zoomoutpause="1" enabled="0" blendcolor="0x000000" zoomfov="20" zoomin="0" softedge="0" blendtime="1" zoomspeed="2"/>
+    <control invertwheel="0" lockedwheel="0" simulatemass="1" invertcontrol="1" contextfullscreen="0" sensitivity="8" speedwheel="1" lockedkeyboardzoom="0" dblclickfullscreen="0" lockedmouse="0" lockedkeyboard="0" hideabout="0"/>
+  </panorama>
+  <panorama id="node2">
+    <input height="1759" leveltilesize="510" levelbias="0.400" levelbiashidpi="0.400" leveltileurl="tiles/PanoramaDusk/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelingpitch="0" width="1759" levelingroll="0">
+      <level height="1759" preload="0" predecode="0" width="1759"/>
+      <level height="879" preload="0" predecode="0" width="879"/>
+      <level height="439" preload="1" predecode="1" width="439"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="59.5" pan="114.39"/>
+      <min tilt="-29.742" fov="5" pan="-180"/>
+      <max tilt="29.742" fov="120" pan="180"/>
+    </view>
+    <userdata author="" info="" title="Panoramic Dusk" source="" description="Panoramic Dusk" comment="" latitude="" longitude="" tags="Panoramics|Panoramic Dusk" datetime="" copyright=""/>
+    <hotspots height="20" wordwrap="1" width="180">
+      <label border="1" height="20" backgroundalpha="1" enabled="1" wordwrap="1" borderradius="1" textcolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" background="1" width="180" bordercolor="0x000000" textalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomout="0" zoomoutpause="1" enabled="0" blendcolor="0x000000" zoomfov="20" zoomin="0" softedge="0" blendtime="1" zoomspeed="2"/>
+    <control invertwheel="0" lockedwheel="0" simulatemass="1" invertcontrol="1" contextfullscreen="0" sensitivity="8" speedwheel="1" lockedkeyboardzoom="0" dblclickfullscreen="0" lockedmouse="0" lockedkeyboard="0" hideabout="0"/>
+  </panorama>
+</tour>

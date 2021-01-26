@@ -1,0 +1,46 @@
+<IfModule mod_deflate.c>
+    #The following line is enough for .js and .css
+    AddOutputFilter DEFLATE js css
+    AddOutputFilterByType DEFLATE text/plain text/xml application/xhtml+xml text/css   application/xml application/rss+xml application/atom_xml application/x-javascript application/x-httpd-php application/x-httpd-fastphp text/html
+
+    #The following lines are to avoid bugs with some browsers
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access 1 week"
+    ExpiresByType image/jpeg "access 1 week"
+    ExpiresByType image/gif "access 1 week"
+    ExpiresByType image/png "access 1 week"
+    ExpiresByType text/css "access 1 week"
+    ExpiresByType text/html "access 1 week"
+    ExpiresByType application/pdf "access 1 week"
+    ExpiresByType text/x-javascript "access 1 week"
+    ExpiresByType application/x-shockwave-flash "access 1 week"
+    ExpiresByType image/x-icon "access 1 week"
+    ExpiresDefault "access 1 week"
+</IfModule>
+
+SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots
+Deny from env=block_bad_bots
+
+ErrorDocument 404 /index.php
+
+RewriteEngine on
+
+RewriteRule ^_secF - [L,NC]
+RewriteRule ^inc - [L,NC]
+
+# Rewrite /foo/bar to /foo/bar.php
+# If the request doesn't end in .php (Case insensitive) continue processing rules
+RewriteCond %{REQUEST_URI} !\.php$ [NC]
+# If the request doesn't end in a slash continue processing the rules
+RewriteCond %{REQUEST_URI} [^/]$
+RewriteRule ^([^.?]+)$ %{REQUEST_URI}.php [L]
+
+# Return 404 if original request is /foo/bar.php
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteRule .* - [L,R=404]

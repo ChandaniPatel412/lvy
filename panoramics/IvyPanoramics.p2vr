@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Pano2VR project file  -->
+<pano2vrconfig>
+  <tour>
+    <panorama>
+      <id>node1</id>
+      <input>
+        <patch/>
+        <type>auto</type>
+        <filename>../Images/Panoramics/PanoramaDay.jpg</filename>
+        <levelpitch>0</levelpitch>
+        <levelroll>0</levelroll>
+      </input>
+      <viewingparameter>
+        <pan>
+          <start>114.39</start>
+          <min>0</min>
+          <max>360</max>
+        </pan>
+        <tilt>
+          <start>0</start>
+          <min>-90</min>
+          <max>90</max>
+        </tilt>
+        <fov>
+          <start>59.5</start>
+          <minunit>degrees</minunit>
+          <min>5</min>
+          <max>120</max>
+        </fov>
+        <pannorth>0</pannorth>
+        <defaultviewtimestamp>2016-12-09T13:40:02</defaultviewtimestamp>
+      </viewingparameter>
+      <userdata>
+        <tags>Panoramics|Panoramic Day</tags>
+        <title>Panoramic Day</title>
+        <description>Panoramic Day</description>
+      </userdata>
+      <floorplans/>
+      <hotspots/>
+      <sounds/>
+      <output/>
+    </panorama>
+    <panorama>
+      <input>
+        <patch/>
+        <type>auto</type>
+        <filename>../Images/Panoramics/PanoramaDusk.jpg</filename>
+        <levelpitch>0</levelpitch>
+        <levelroll>0</levelroll>
+      </input>
+      <viewingparameter>
+        <pan>
+          <start>114.39</start>
+          <min>0</min>
+          <max>360</max>
+        </pan>
+        <tilt>
+          <start>0</start>
+          <min>-90</min>
+          <max>90</max>
+        </tilt>
+        <fov>
+          <start>59.5</start>
+          <minunit>degrees</minunit>
+          <min>5</min>
+          <max>120</max>
+        </fov>
+        <pannorth>0</pannorth>
+        <defaultviewtimestamp>2016-12-09T13:40:06</defaultviewtimestamp>
+      </viewingparameter>
+      <userdata>
+        <tags>Panoramics|Panoramic Dusk</tags>
+        <title>Panoramic Dusk</title>
+        <description>Panoramic Dusk</description>
+      </userdata>
+      <floorplans/>
+      <hotspots/>
+      <output/>
+      <sounds/>
+      <id>node2</id>
+    </panorama>
+  </tour>
+  <panorama>
+    <id>master</id>
+    <floorplans/>
+    <output>
+      <htmlcss>
+        <html>
+          <enabled>1</enabled>
+          <filename>output/index.html</filename>
+          <values>
+            <value id="gginfo">false</value>
+            <value id="gyro">false</value>
+            <value id="gyrodisable">false</value>
+            <value id="gyronorth">false</value>
+            <value id="jsxml">false</value>
+            <value id="parseanchor">false</value>
+            <value id="swf"/>
+            <value id="swffirst">false</value>
+            <value id="swfgeneric">false</value>
+          </values>
+        </html>
+        <facequality/>
+        <transition/>
+        <autorotate/>
+        <soundstransition/>
+        <hotspottext/>
+        <hotspotstyle/>
+        <tilesize>1759</tilesize>
+        <filename>output/pano.xml</filename>
+        <skinfile>simplex_v13.ggsk</skinfile>
+        <quality>91</quality>
+      </htmlcss>
+    </output>
+    <input>
+      <patch/>
+    </input>
+    <viewingparameter>
+      <pan/>
+      <tilt/>
+      <fov/>
+    </viewingparameter>
+    <userdata/>
+    <hotspots/>
+    <sounds/>
+  </panorama>
+</pano2vrconfig>
